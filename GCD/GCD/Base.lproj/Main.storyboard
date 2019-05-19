@@ -53,15 +53,24 @@
                                     <constraint firstAttribute="height" constant="401" id="0W3-VN-T0q"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-0p-Xel">
+                                <rect key="frame" x="197" y="278.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LZc-9k-TY2" firstAttribute="leading" secondItem="dp3-Wp-Nxw" secondAttribute="leading" id="W1v-VR-oAY"/>
+                            <constraint firstItem="VjF-0p-Xel" firstAttribute="centerY" secondItem="LZc-9k-TY2" secondAttribute="centerY" id="cJm-Wb-JHS"/>
                             <constraint firstItem="LZc-9k-TY2" firstAttribute="centerX" secondItem="sia-ho-V3r" secondAttribute="centerX" id="p2p-Kn-nJC"/>
                             <constraint firstItem="LZc-9k-TY2" firstAttribute="top" secondItem="sia-ho-V3r" secondAttribute="top" id="s8L-cg-mO7"/>
+                            <constraint firstItem="VjF-0p-Xel" firstAttribute="centerX" secondItem="LZc-9k-TY2" secondAttribute="centerX" id="ynV-I0-oy2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sia-ho-V3r"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndecator" destination="VjF-0p-Xel" id="MCk-WT-OaP"/>
+                        <outlet property="imageView" destination="LZc-9k-TY2" id="RSM-pz-bvc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRC-JW-bgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
